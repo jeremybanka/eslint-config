@@ -1,14 +1,15 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-var baseConfig = require("../.eslintrc")
+var baseConfig = require(`../.eslintrc`)
 
 module.exports = {
   extends: [
     `eslint:recommended`,
     `prettier`,
     `plugin:@typescript-eslint/recommended`,
+    `plugin:react/recommended`,
   ],
-  plugins: [`prettier`, `import`, `jest`, `@typescript-eslint`],
+  plugins: [`prettier`, `import`, `jest`, `react`, `@typescript-eslint`],
   parser: `@typescript-eslint/parser`,
   parserOptions: {
     ecmaFeatures: { jsx: true },
@@ -49,5 +50,6 @@ module.exports = {
         },
       },
     ],
+    "react/prop-types": `off`,
   },
 }
