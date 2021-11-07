@@ -1,17 +1,17 @@
 {
   "name": "@banka/eslint-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "my personal style preferences",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/jeremybanka/eslint-config.git",
+    "url": "git+ssh://git@github.com/jeremybanka/eslint-config.git",
     "directory": "pkg/npm/eslint-config"
   },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "jeremybanka",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 7"
@@ -28,5 +28,12 @@
     "typescript": "^4.4.4",
     "prettier": "^2.4.1",
     "ts-node": "^10.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/jeremybanka/eslint-config/issues"
+  },
+  "homepage": "https://github.com/jeremybanka/eslint-config#readme",
+  "keywords": [
+    "eslint"
+  ]
 }
