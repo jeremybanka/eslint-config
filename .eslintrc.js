@@ -33,6 +33,7 @@ module.exports = {
     "@typescript-eslint/type-annotation-spacing": `error`,
     "@typescript-eslint/unified-signatures": `error`,
     "@typescript-eslint/no-unused-vars": `off`,
+    "@typescript-eslint/explicit-module-boundary-types": [`error`, `always`],
     "import/extensions": [`error`, `never`],
     "import/prefer-default-export": `off`,
     "prettier/prettier": `error`,
