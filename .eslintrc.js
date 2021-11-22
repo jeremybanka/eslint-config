@@ -34,6 +34,12 @@ module.exports = {
     "@typescript-eslint/unified-signatures": `error`,
     "@typescript-eslint/no-unused-vars": `off`,
     "@typescript-eslint/explicit-module-boundary-types": `error`,
+    "@typescript-eslint/consistent-type-imports": [
+      `error`,
+      {
+        prefer: `type-imports`,
+      },
+    ],
     "import/extensions": [`error`, `never`],
     "import/prefer-default-export": `off`,
     "prettier/prettier": `error`,
