@@ -40,7 +40,15 @@ module.exports = {
         prefer: `type-imports`,
       },
     ],
-    "import/extensions": [`error`, `never`],
+    "import/extensions": [
+      `error`,
+      {
+        ts: `never`,
+        tsx: `never`,
+        js: `never`,
+        jsx: `never`,
+      },
+    ],
     "import/prefer-default-export": `off`,
     "prettier/prettier": `error`,
     "arrow-parens": [`error`, `always`],
@@ -169,6 +177,11 @@ module.exports = {
           {
             pattern: `react`,
             group: `external`,
+            position: `before`,
+          },
+          {
+            pattern: `@app`,
+            group: `internal`,
             position: `before`,
           },
         ],
