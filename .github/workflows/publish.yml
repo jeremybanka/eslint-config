@@ -17,3 +17,8 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
+      - run: cd ./react && npm run build
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          package: ./react/package.json
+          token: ${{ secrets.NPM_TOKEN }}

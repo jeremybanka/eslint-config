@@ -1,10 +1,10 @@
 {
   "name": "@banka/eslint-config-react",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "my personal style preferences, extended to react",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild .eslintrc.js --bundle --platform=node --outfile=dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,10 @@
     "typescript": "^4.4.4"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "esbuild": "^0.14.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
