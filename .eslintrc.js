@@ -46,6 +46,8 @@ module.exports = {
         tsx: `never`,
         js: `never`,
         jsx: `never`,
+        css: `always`,
+        scss: `always`,
       },
     ],
     "import/prefer-default-export": `off`,
@@ -84,6 +86,9 @@ module.exports = {
       {
         code: 81,
         ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignorePattern: `^import\\s.+\\sfrom\\s.+$`,
+        ignoreUrls: true,
       },
     ],
     "max-lines": [
