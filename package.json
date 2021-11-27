@@ -1,13 +1,13 @@
 {
   "name": "@banka/eslint-config",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "my personal style preferences",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jeremybanka/eslint-config.git",
     "directory": "pkg/npm/eslint-config"
   },
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

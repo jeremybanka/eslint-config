@@ -1,10 +1,10 @@
 {
   "name": "@banka/eslint-config-react",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "my personal style preferences, extended to react",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "esbuild .eslintrc.js --bundle --platform=node --outfile=dist/index.js"
+    "build": "esbuild .eslintrc.js --bundle --platform=node --outfile=index.js"
   },
   "repository": {
     "type": "git",
