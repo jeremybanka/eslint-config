@@ -1,18 +1,15 @@
 {
-  "name": "@banka/eslint-config",
+  "name": "@banka/eslint-config-react",
   "version": "1.0.5",
-  "description": "my personal style preferences",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/jeremybanka/eslint-config.git",
-    "directory": "pkg/npm/eslint-config"
-  },
+  "description": "my personal style preferences, extended to react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jeremybanka",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github.com/jeremybanka/eslint-config"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -21,6 +18,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.2.1",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
   },
@@ -31,15 +29,15 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.2.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.5.0",
     "typescript": "^4.4.4"
   },
-  "bugs": {
-    "url": "https://github.com/jeremybanka/eslint-config/issues"
-  },
-  "homepage": "https://github.com/jeremybanka/eslint-config#readme",
   "keywords": [
     "eslint"
-  ]
+  ],
+  "author": "jeremybanka",
+  "license": "MIT"
 }

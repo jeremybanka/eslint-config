@@ -7,7 +7,6 @@ module.exports = {
   plugins: [`prettier`, `import`, `jest`, `@typescript-eslint`],
   parser: `@typescript-eslint/parser`,
   parserOptions: {
-    ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
     sourceType: `module`,
   },
@@ -175,17 +174,11 @@ module.exports = {
         "groups": [`builtin`, `external`, `internal`],
         "pathGroups": [
           {
-            pattern: `react`,
-            group: `external`,
-            position: `before`,
-          },
-          {
-            pattern: `@app`,
+            pattern: `~`,
             group: `internal`,
             position: `before`,
           },
         ],
-        "pathGroupsExcludedImportTypes": [`react`],
         "newlines-between": `always`,
         "alphabetize": {
           order: `asc`,

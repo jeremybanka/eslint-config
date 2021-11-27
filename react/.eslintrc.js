@@ -3,30 +3,18 @@
 var baseConfig = require(`../.eslintrc`)
 
 module.exports = {
-  extends: [
-    `eslint:recommended`,
-    `prettier`,
-    `plugin:@typescript-eslint/recommended`,
-    `plugin:react/recommended`,
-  ],
-  plugins: [`prettier`, `import`, `jest`, `react`, `@typescript-eslint`],
-  parser: `@typescript-eslint/parser`,
+  extends: [...baseConfig.extends, `plugin:react/recommended`],
+  plugins: [...baseConfig.plugins, `react`],
+  parser: baseConfig.parser,
   parserOptions: {
+    ...baseConfig.parserOptions,
     ecmaFeatures: { jsx: true },
-    ecmaVersion: 2018,
-    sourceType: `module`,
   },
-  env: {
-    node: true,
-    browser: true,
-    es2021: true,
-    jest: true,
-  },
+  env: baseConfig.env,
   settings: {
-    "import/resolver": {
-      node: {
-        extensions: [`.js, .cjs, .ts, .tsx`],
-      },
+    ...baseConfig.settings,
+    react: {
+      version: `detect`,
     },
   },
   rules: {
@@ -34,20 +22,16 @@ module.exports = {
     "import/order": [
       `error`,
       {
-        "groups": [`builtin`, `external`, `internal`],
-        "pathGroups": [
+        ...baseConfig.rules[`import/order`][1],
+        pathGroups: [
+          ...baseConfig.rules[`import/order`][1].pathGroups,
           {
             pattern: `react`,
             group: `external`,
             position: `before`,
           },
         ],
-        "pathGroupsExcludedImportTypes": [`react`],
-        "newlines-between": `always`,
-        "alphabetize": {
-          order: `asc`,
-          caseInsensitive: true,
-        },
+        pathGroupsExcludedImportTypes: [`react`],
       },
     ],
     "react/prop-types": `off`,
