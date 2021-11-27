@@ -1,6 +1,6 @@
 {
   "name": "@banka/eslint-config-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "my personal style preferences, extended to react",
   "main": "index.js",
   "scripts": {
