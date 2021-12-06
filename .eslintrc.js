@@ -181,7 +181,12 @@ module.exports = {
         "groups": [`builtin`, `external`, `internal`],
         "pathGroups": [
           {
-            pattern: `~/**/*`,
+            pattern: `~`,
+            group: `internal`,
+            position: `before`,
+          },
+          {
+            pattern: `~/**`,
             group: `internal`,
             position: `before`,
           },
