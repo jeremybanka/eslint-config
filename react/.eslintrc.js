@@ -19,6 +19,19 @@ module.exports = {
   },
   rules: {
     ...baseConfig.rules,
+    "import/extensions": [
+      "error",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never",
+        "css": "always",
+        "scss": "always",
+        "client": "always",
+        "server": "always"
+      }
+    ],
     "import/order": [
       `error`,
       {
