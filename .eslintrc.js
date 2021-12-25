@@ -51,6 +51,7 @@ module.exports = {
         scss: `always`,
       },
     ],
+    "import/named": 0,
     "import/no-unresolved": `off`,
     "import/prefer-default-export": `off`,
     "prettier/prettier": `error`,
